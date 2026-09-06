@@ -9,40 +9,107 @@
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.65; max-width: 720px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
       color: #1c2433; background: #f7faff; }
-    @media (prefers-color-scheme: dark) { body { color: #e8edf6; background: #11151c; } a { color: #6fd6ff; } }
+    @media (prefers-color-scheme: dark) { body { color: #e8edf6; background: #11151c; } a { color: #6fd6ff; }
+      .box { background: #182030 !important; border-color: #2b3648 !important; } }
     h1 { font-size: 1.9rem; margin-bottom: 0.25rem; }
     h2 { font-size: 1.2rem; margin-top: 2rem; }
     .tag { display: inline-block; background: #2fb686; color: #fff; font-weight: 600;
            font-size: 0.8rem; padding: 0.25rem 0.7rem; border-radius: 999px; }
     .updated { color: #6b7686; font-size: 0.9rem; margin-top: 0.4rem; }
+    .box { background: #ffffff; border: 1px solid #dfe6f2; border-radius: 12px; padding: 1rem 1.15rem; margin: 1.4rem 0; }
+    .box > :first-child { margin-top: 0; } .box > :last-child { margin-bottom: 0; }
   </style>
 </head>
 <body>
   <h1>Earth Explorer: Kids Atlas — Privacy Policy</h1>
-  <p class="tag">No data collected</p>
-  <p class="updated">Last updated: 2 July 2026</p>
-  <p>Earth Explorer: Kids Atlas is an educational globe-exploration game for children (ages 4–10): spin a beautiful 3D planet, meet continents, countries, capitals and famous cities, and play the Find It! game. <strong>The app does not collect, store, transmit, or share any personal information whatsoever.</strong></p>
-  <h2>What we collect</h2>
-  <p>Nothing. Earth Explorer: Kids Atlas has:</p>
+  <p class="tag">No personal information collected</p>
+  <p class="updated">Last updated: 7 September 2026 · applies to version 2.0 and later</p>
+
+  <div class="box">
+    <p><strong>The short version.</strong> Earth Explorer never asks who your child is. There are no
+    accounts, no adverts, no analytics and no third-party trackers, and we do not build a profile of
+    anyone. Nearly everything happens entirely on your iPad. The one exception is <strong>Ask
+    Kore</strong>, an optional feature that is switched off until a grown-up turns it on — and even
+    then, your child's questions are never stored, by us or on the device.</p>
+  </div>
+
+  <p><em>Version 2.0 added features that need the internet — flying down to real places, sharper
+  satellite imagery, yesterday's real clouds, and the optional Ask Kore guide. This policy replaces
+  the earlier one, which described the fully offline version 1.</em></p>
+
+  <h2>What stays on your iPad</h2>
+  <p>All of this is stored only on the device, is never uploaded, and is deleted with the app:</p>
   <ul>
-    <li>No accounts, sign-in, or registration.</li>
-    <li>No analytics, tracking, or advertising of any kind.</li>
-    <li>No third-party SDKs or services.</li>
-    <li>No access to the camera, microphone, photos, contacts, or location.</li>
-    <li>No network connection — the app works fully offline.</li>
+    <li>Passport stamps, quiz scores and streaks.</li>
+    <li>Settings: chosen level, difficulty, whether narration is on.</li>
+    <li>How many Ask Kore questions have been used today, so the daily limit can be applied.</li>
+    <li>Narration audio the app has downloaded, so the same sentence is never fetched twice.</li>
+    <li>For the "How it's going" page for grown-ups: the <strong>place</strong>, a
+      <strong>single word</strong> for the subject (for example "animals"), and the <strong>date</strong>.
+      <strong>The question your child asked is never written down.</strong> That page is put together
+      on your iPad and is never sent anywhere. It can be erased in one tap.</li>
   </ul>
-  <h2>What stays on the device</h2>
-  <p>Game progress and settings (and, where the app asks for it, an optional first name used only for friendly greetings)
-     are saved <strong>only on the device itself</strong>. This information never leaves the device, is never sent to us
-     or anyone else, and is removed if the app is deleted. Progress can also be reset any time from the app's
-     grown-ups area, which sits behind a press-and-hold parental gate.</p>
+
+  <h2>What leaves your iPad — only when Ask Kore is used</h2>
+  <p>Ask Kore is off by default and can only be switched on by a grown-up who passes an arithmetic
+  gate. When a child asks a question, the following is sent to our server and on to Google's Vertex AI
+  so that an answer can be generated:</p>
+  <ul>
+    <li>The text of the question.</li>
+    <li>The name of the place on screen (for example "Kenya"), so the answer makes sense.</li>
+    <li>Up to two earlier question-and-answer pairs from the same sitting, so follow-up questions work.</li>
+    <li>A random identifier generated on the device, used only to stop any single copy of the app
+      making an unreasonable number of requests. It is not connected to a name, email, Apple ID or any
+      other identifier, and tells us nothing about who is using the app.</li>
+  </ul>
+  <p>We do not keep the questions or the answers. They pass through our server in order to be answered.</p>
+
+  <h2>The microphone</h2>
+  <p>If your child speaks a question, the app uses the microphone. The recording is turned into text
+  <strong>on the iPad</strong> using Apple's on-device speech recognition. Where a device cannot do
+  that on-device, the app offers typing instead rather than sending the recording anywhere. Audio is
+  never stored and never sent to us. iOS will ask your permission before the microphone is used, and
+  the feature works only while Ask Kore is switched on.</p>
+
+  <h2>Artificial intelligence</h2>
+  <p>Answers from Kore are generated by Google's Gemini model running on <strong>Google Cloud Vertex
+  AI</strong>. Under Google Cloud's terms, content sent to Vertex AI is <strong>not used to train
+  Google's models</strong>. Google may retain content briefly for abuse monitoring. We deliberately
+  chose Vertex AI over the consumer Gemini service because of this difference in data handling.</p>
+  <p>Answers are produced by a machine, are not reviewed by a person before your child sees them, and
+  can occasionally be wrong. Please see the <a href="terms/">Terms of Use</a>.</p>
+
+  <h2>Maps, imagery and the internet</h2>
+  <p>Flying down to a place uses <strong>Apple Maps</strong>. The sharper ground you see when zooming
+  in, and the "today's clouds" layer, come from <strong>NASA</strong>'s public satellite imagery. Our
+  server runs on <strong>Cloudflare</strong>. Requests to Apple, NASA and Cloudflare are subject to
+  their own privacy practices; we send them nothing about your child. Without an internet connection
+  the globe, the levels, the quiz, the passport and the narration all still work.</p>
+
+  <h2>Purchases</h2>
+  <p>Purchases are handled entirely by Apple. We never see card numbers, billing details or your Apple
+  ID — only Apple's confirmation that a purchase is valid.</p>
+
   <h2>Children's privacy</h2>
-  <p>Earth Explorer: Kids Atlas is designed for children and complies with the Children's Online Privacy Protection Act (COPPA) and Apple's
-     Kids Category requirements: because we collect no data at all, there is nothing to disclose, request consent for,
-     or delete.</p>
+  <p>Earth Explorer is made for children and is built to collect as little as possible. We do not
+  knowingly collect personal information from anyone, of any age. A child cannot enter their name,
+  create a profile, message anyone, or see content from other users. Purchases and the Ask Kore switch
+  both sit behind a gate intended for grown-ups. We believe this is consistent with the Children's
+  Online Privacy Protection Act (COPPA) and Apple's Kids Category requirements.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Leave Ask Kore switched off, and nothing at all leaves the iPad.</li>
+    <li>Erase the curiosity history any time: <strong>Settings → Grown-up Zone → How it's going →
+      Erase this history</strong>.</li>
+    <li>Reset everything from <strong>Settings → Grown-up Zone</strong>, or delete the app.</li>
+  </ul>
+
   <h2>Changes to this policy</h2>
-  <p>If this policy ever changes, the updated version will be posted on this page with a new date above.</p>
+  <p>If this policy changes, the updated version is posted here with a new date above.</p>
+
   <h2>Contact</h2>
   <p>Questions about privacy? Email <a href="mailto:revanwabale@gmail.com">revanwabale@gmail.com</a>.</p>
+  <p><a href="terms/">Terms of Use</a> · <a href="../">All privacy policies</a></p>
 </body>
 </html>
